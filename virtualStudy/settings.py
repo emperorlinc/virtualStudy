@@ -27,12 +27,14 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+AUTH_USER_MODEL = 'core.User'
+
 
 # Application definition
 
 INSTALLED_APPS = [
     # Own application.
-    'core.apps.CoreConfig'
+    'core.apps.CoreConfig',
 
     # Third-party application.
     'rest_framework',

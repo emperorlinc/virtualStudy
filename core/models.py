@@ -82,7 +82,8 @@ class Faculty(models.Model):
 
 
 class Room(models.Model):
-    host = models.ForeignKey(to=UserProfile, on_delete=models.CASCADE)
+    host = models.ForeignKey(
+        to=UserProfile, on_delete=models.CASCADE, related_name='host')
     name = models.CharField(max_length=64, unique=True)
     faculty = models.ForeignKey(
         to=Faculty, on_delete=models.CASCADE, blank=True, null=True)

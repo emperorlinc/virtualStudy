@@ -1,2 +1,4 @@
-core/migrations
+core/__pycache__
 virtualStudy/__pycache__
+venv
+db.sqlite3
